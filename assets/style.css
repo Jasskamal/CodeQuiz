@@ -1,0 +1,85 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aqua;
+    min-height: 100vh;
+    background: linear-gradient(to right top);
+}
+.QAbox {
+    width: 500px;
+    padding: 20px;
+    height: 100px auto;
+    background-color: #ffff;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.QAheader{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: cadetblue;
+    color: crimson;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+}
+.QAset{
+    display: none;
+}
+.QAset.active{
+    display: block;
+}
+.QAset h4{
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+.AnsRow{
+    position: relative;
+    margin-bottom: 10px;
+}
+.AnsRow input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.AnsRow span{
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+.AnsRow:hover span{
+    background-color: #9ab5ac;
+}
+.AnsRow input:checked + span{
+    background-color: red;
+}
+.AnsRow input[valid]:checked + span{
+    background-color: rgb(56, 56, 247);
+}
+.QAfooter{
+    padding: 10px 0 0;
+    text-align: right;
+}
+.btn1{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: royalblue;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.btn1:hover{
+    background-color: rgb(21, 21, 255);
+}
